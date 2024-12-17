@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.4.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="abdd4717-1ce2-46f8-a65f-cd9b30a517e1" data-root-id="p10640" style="display: contents;"></div>
+  
+    <script type="application/json" id="c6b375de-ee0f-4aad-a91b-f7b3f29dba0e">
+      {"4c932d5d-308e-4e72-9576-2d80c5c079cd":{"version":"3.4.3","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p10640","attributes":{"width":800,"x_range":{"type":"object","name":"DataRange1d","id":"p10641"},"y_range":{"type":"object","name":"DataRange1d","id":"p10642","attributes":{"start":1}},"x_scale":{"type":"object","name":"LinearScale","id":"p10650"},"y_scale":{"type":"object","name":"LogScale","id":"p10651"},"title":{"type":"object","name":"Title","id":"p10643","attributes":{"text":"Distribution of Burned Area","text_font_size":"14pt"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p10679","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p10637","attributes":{"selected":{"type":"object","name":"Selection","id":"p10638","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p10639"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAACUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAAsAAAALQAAAC4AAAAvAAAAMAAAADEAAAA="},"shape":[50],"dtype":"int32","order":"little"}],["count",{"type":"ndarray","array":{"type":"bytes","data":"ywEAAB4AAAAKAAAABQAAAAQAAAAAAAAAAAAAAAEAAAACAAAAAwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA="},"shape":[50],"dtype":"int32","order":"little"}],["left",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAABvXwfOGdE1QG9fB84Z0UVAk4eFWtNcUEBvXwfOGdFVQEs3iUFgRVtAk4eFWtNcYECBc0aU9hZjQG9fB84Z0WVAXUvIBz2LaEBLN4lBYEVrQDkjSnuD/21Ak4eFWtNccECK/WX35LlxQIFzRpT2FnNAeOkmMQh0dEBvXwfOGdF1QGbV52orLndAXUvIBz2LeEBUwaikTuh5QEs3iUFgRXtAQq1p3nGifEA5I0p7g/99QDCZKhiVXH9Ak4eFWtNcgECPwvUoXAuBQIr9ZffkuYFAhjjWxW1ogkCBc0aU9haDQH2utmJ/xYNAeOkmMQh0hEB0JJf/kCKFQG9fB84Z0YVAapp3nKJ/hkBm1edqKy6HQGEQWDm03IdAXUvIBz2LiEBYhjjWxTmJQFTBqKRO6IlAT/wYc9eWikBLN4lBYEWLQEZy+Q/p84tAQq1p3nGijEA96Nms+lCNQDkjSnuD/41ANF66SQyujkAwmSoYlVyPQBZqTfOOBZBAk4eFWtNckEARpb3BF7SQQA=="},"shape":[50],"dtype":"float64","order":"little"}],["right",{"type":"ndarray","array":{"type":"bytes","data":"b18HzhnRNUBvXwfOGdFFQJOHhVrTXFBAb18HzhnRVUBLN4lBYEVbQJOHhVrTXGBAgXNGlPYWY0BvXwfOGdFlQF1LyAc9i2hASzeJQWBFa0A5I0p7g/9tQJOHhVrTXHBAiv1l9+S5cUCBc0aU9hZzQHjpJjEIdHRAb18HzhnRdUBm1edqKy53QF1LyAc9i3hAVMGopE7oeUBLN4lBYEV7QEKtad5xonxAOSNKe4P/fUAwmSoYlVx/QJOHhVrTXIBAj8L1KFwLgUCK/WX35LmBQIY41sVtaIJAgXNGlPYWg0B9rrZif8WDQHjpJjEIdIRAdCSX/5AihUBvXwfOGdGFQGqad5yif4ZAZtXnaisuh0BhEFg5tNyHQF1LyAc9i4hAWIY41sU5iUBUwaikTuiJQE/8GHPXlopASzeJQWBFi0BGcvkP6fOLQEKtad5xooxAPejZrPpQjUA5I0p7g/+NQDReukkMro5AMJkqGJVcj0AWak3zjgWQQJOHhVrTXJBAEaW9wRe0kECPwvUoXAuRQA=="},"shape":[50],"dtype":"float64","order":"little"}],["center",{"type":"ndarray","array":{"type":"bytes","data":"b18HzhnRJUCTh4Va01xAQEo3iUFgRUtAgXNGlPYWU0BdS8gHPYtYQDgjSnuD/11Aiv1l9+S5YUB46SYxCHRkQGbV52orLmdAVMGopE7oaUBCrWnecaJsQDCZKhiVXG9AjsL1KFwLcUCGONbFbWhyQHyutmJ/xXNAdCSX/5AidUBqmnecon92QGIQWDm03HdAWIY41sU5eUBQ/Bhz15Z6QEZy+Q/p83tAPujZrPpQfUA0XrpJDK5+QBZqTfOOBYBAEaW9wRe0gEAM4C2QoGKBQAgbnl4pEYJABFYOLbK/gkD/kH77Om6DQPrL7snDHIRA9gZfmEzLhEDyQc9m1XmFQOx8PzVeKIZA6LevA+fWhkDk8h/Sb4WHQN8tkKD4M4hA2mgAb4HiiEDWo3A9CpGJQNLe4AuTP4pAzRlR2hvuikDIVMGopJyLQMSPMXctS4xAwMqhRbb5jEC7BRIUP6iNQLZAguLHVo5AsnvysFAFj0CutmJ/2bOPQNR46SYxMZBAUpYhjnWIkEDQs1n1ud+QQA=="},"shape":[50],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p10680","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p10681"}}},"glyph":{"type":"object","name":"Quad","id":"p10676","attributes":{"left":{"type":"field","field":"left"},"right":{"type":"field","field":"right"},"bottom":{"type":"value","value":1},"top":{"type":"field","field":"count"},"line_alpha":{"type":"value","value":0.7},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.7},"hatch_alpha":{"type":"value","value":0.7}}},"nonselection_glyph":{"type":"object","name":"Quad","id":"p10677","attributes":{"left":{"type":"field","field":"left"},"right":{"type":"field","field":"right"},"bottom":{"type":"value","value":1},"top":{"type":"field","field":"count"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Quad","id":"p10678","attributes":{"left":{"type":"field","field":"left"},"right":{"type":"field","field":"right"},"bottom":{"type":"value","value":1},"top":{"type":"field","field":"count"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p10649","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p10662"},{"type":"object","name":"WheelZoomTool","id":"p10663","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p10664","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p10665","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p10670"},{"type":"object","name":"ResetTool","id":"p10671"},{"type":"object","name":"HelpTool","id":"p10672"},{"type":"object","name":"HoverTool","id":"p10682","attributes":{"renderers":"auto","tooltips":[["Range","@left{0.0} to @right{0.0} hectares"],["Count","@count"]]}}]}},"left":[{"type":"object","name":"LogAxis","id":"p10657","attributes":{"ticker":{"type":"object","name":"LogTicker","id":"p10658","attributes":{"num_minor_ticks":10,"mantissas":[1,5]}},"formatter":{"type":"object","name":"LogTickFormatter","id":"p10659"},"axis_label":"Frequency","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10660"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p10652","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p10653","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p10654"},"axis_label":"Burned Area (hectares)","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10655"}}}],"center":[{"type":"object","name":"Grid","id":"p10656","attributes":{"axis":{"id":"p10652"}}},{"type":"object","name":"Grid","id":"p10661","attributes":{"dimension":1,"axis":{"id":"p10657"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('c6b375de-ee0f-4aad-a91b-f7b3f29dba0e').textContent;
+              const render_items = [{"docid":"4c932d5d-308e-4e72-9576-2d80c5c079cd","roots":{"p10640":"abdd4717-1ce2-46f8-a65f-cd9b30a517e1"},"root_ids":["p10640"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

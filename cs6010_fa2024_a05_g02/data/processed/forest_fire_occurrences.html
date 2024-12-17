@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.4.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="eef58e88-86cb-4adc-9ae8-7ac6d735f695" data-root-id="p10858" style="display: contents;"></div>
+  
+    <script type="application/json" id="aaba0d44-448c-468c-9ed3-1b96a336cb05">
+      {"9578660e-0587-4f4c-971f-13b1dc45f564":{"version":"3.4.3","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p10858","attributes":{"children":[{"type":"object","name":"Figure","id":"p10767","attributes":{"width":800,"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p10777","attributes":{"factors":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p10769","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p10778"},"y_scale":{"type":"object","name":"LinearScale","id":"p10779"},"title":{"type":"object","name":"Title","id":"p10770","attributes":{"text":"Forest Fire Occurrences by Month","text_font_size":"16pt"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p10807","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p10764","attributes":{"selected":{"type":"object","name":"Selection","id":"p10765","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p10766"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["month",{"type":"ndarray","array":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"],"shape":[12],"dtype":"object","order":"little"}],["count",{"type":"ndarray","array":{"type":"bytes","data":"AgAAABQAAAA2AAAACQAAAAIAAAARAAAAIAAAALgAAACsAAAADwAAAAEAAAAJAAAA"},"shape":[12],"dtype":"int32","order":"little"}],["color",{"type":"ndarray","array":["#440154","#481E70","#443982","#3B518A","#31668D","#287A8E","#218E8C","#1FA286","#32B57A","#57C665","#88D547","#BFDF24"],"shape":[12],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p10808","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p10809"}}},"glyph":{"type":"object","name":"VBar","id":"p10804","attributes":{"x":{"type":"field","field":"month"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"color"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p10805","attributes":{"x":{"type":"field","field":"month"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"color"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p10806","attributes":{"x":{"type":"field","field":"month"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"color"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p10776","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p10790"},{"type":"object","name":"WheelZoomTool","id":"p10791","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p10792","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p10793","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p10798"},{"type":"object","name":"ResetTool","id":"p10799"},{"type":"object","name":"HelpTool","id":"p10800"},{"type":"object","name":"HoverTool","id":"p10810","attributes":{"renderers":[{"id":"p10807"}],"tooltips":[["Month","@month"],["Count","@count"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p10785","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p10786","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p10787"},"axis_label":"Count","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10788"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p10780","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p10781"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p10782"},"axis_label":"Month","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10783"}}}],"center":[{"type":"object","name":"Grid","id":"p10784","attributes":{"axis":{"id":"p10780"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p10789","attributes":{"dimension":1,"axis":{"id":"p10785"}}}]}},{"type":"object","name":"Figure","id":"p10814","attributes":{"width":800,"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p10824","attributes":{"factors":["mon","tue","wed","thu","fri","sat","sun"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p10816","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p10825"},"y_scale":{"type":"object","name":"LinearScale","id":"p10826"},"title":{"type":"object","name":"Title","id":"p10817","attributes":{"text":"Forest Fire Occurrences by Day of the Week","text_font_size":"16pt"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p10854","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p10811","attributes":{"selected":{"type":"object","name":"Selection","id":"p10812","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p10813"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAA=="},"shape":[7],"dtype":"int32","order":"little"}],["day",{"type":"ndarray","array":["mon","tue","wed","thu","fri","sat","sun"],"shape":[7],"dtype":"object","order":"little"}],["count",{"type":"ndarray","array":{"type":"bytes","data":"SgAAAEAAAAA2AAAAPQAAAFUAAABUAAAAXwAAAA=="},"shape":[7],"dtype":"int32","order":"little"}],["color",{"type":"ndarray","array":["#000003","#2B115E","#711F81","#B53679","#F0605D","#FEAE76","#FBFCBF"],"shape":[7],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p10855","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p10856"}}},"glyph":{"type":"object","name":"VBar","id":"p10851","attributes":{"x":{"type":"field","field":"day"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"color"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p10852","attributes":{"x":{"type":"field","field":"day"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"color"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p10853","attributes":{"x":{"type":"field","field":"day"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"count"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"color"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p10823","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p10837"},{"type":"object","name":"WheelZoomTool","id":"p10838","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p10839","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p10840","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p10845"},{"type":"object","name":"ResetTool","id":"p10846"},{"type":"object","name":"HelpTool","id":"p10847"},{"type":"object","name":"HoverTool","id":"p10857","attributes":{"renderers":[{"id":"p10854"}],"tooltips":[["Day","@day"],["Count","@count"]]}}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p10832","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p10833","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p10834"},"axis_label":"Count","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10835"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p10827","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p10828"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p10829"},"axis_label":"Day","axis_label_text_font_size":"12pt","major_label_policy":{"type":"object","name":"AllLabels","id":"p10830"}}}],"center":[{"type":"object","name":"Grid","id":"p10831","attributes":{"axis":{"id":"p10827"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p10836","attributes":{"dimension":1,"axis":{"id":"p10832"}}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('aaba0d44-448c-468c-9ed3-1b96a336cb05').textContent;
+              const render_items = [{"docid":"9578660e-0587-4f4c-971f-13b1dc45f564","roots":{"p10858":"eef58e88-86cb-4adc-9ae8-7ac6d735f695"},"root_ids":["p10858"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
